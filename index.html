@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maison 21 G</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nyanpasu.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+<div id="fullpage">
+    <div class="section" id="section0">
+        <nav class="megamenu" data-spy="affix">
+            <div id="navbar">
+                <img src="assets/img/logo.png" alt="logo">
+            </div>
+        </nav>
+        <video data-autoplay loop muted id="myVideo">
+            <source src="assets/video/fog.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+            <h1>Parfum 21G</h1>
+            <p>Créer votre parfum n'aura jamais été aussi simple !</p>
+            <div class="button">
+                <p>Me tenir au courant</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <p>PRESENTATION</p>
+        <h1>le concept</h1>
+        <video autoplay loop muted id="myVideo">
+            <source src="assets/video/fog.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<!--<div id="set-height">
+    <video id="v0" tabindex="0" autobuffer preload>
+        <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
+                src="assets/video/comp.mp4"></source>
+        p Sorry, your browser does not support the &lt;video&gt; element.
+    </video>
+</div>-->
+
+<!--<div class="section">
+    <div id="quest">
+        <div class="item" data-aos="slide-up">6</div>
+        <div class="item" data-aos="slide-up">7</div>
+        <div class="item" data-aos="slide-up">8</div>
+        <div class="item" data-aos="slide-up">9</div>
+        <div class="item" data-aos="slide-up">0</div>
+    </div>
+</div>-->
+</div>
+<script src="js/aos.js"></script>
+<script src="js/video.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="js/fullpage.min.js"></script>
+<script>
+   /* AOS.init({
+        duration: 1200,
+    })*/
+
+   new fullpage('#fullpage', {
+       //options here
+       autoScrolling:true,
+       scrollHorizontally: true
+   });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/*------------------------------------------------------------------
+    NAVIGATION
+-------------------------------------------------------------------*/
+
+.affix-top {
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    top: -100%;
+}
+
+.affix {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #1f1f1f !important;
+    -webkit-transition: visibility 0.95s ease-in-out, opacity 0.95s ease-in-out, bottom 0.95s ease-in-out, top 0.95s ease-in-out, left 0.95s ease-in-out, right 0.95s ease-in-out;
+    -moz-transition: visibility 0.95s ease-in-out, opacity 0.95s ease-in-out, bottom 0.95s ease-in-out, top 0.95s ease-in-out, left 0.95s ease-in-out, right 0.95s ease-in-out;
+    -o-transition: visibility 0.95s ease-in-out, opacity 0.95s ease-in-out, bottom 0.95s ease-in-out, top 0.95s ease-in-out, left 0.95s ease-in-out, right 0.95s ease-in-out;
+    transition: visibility 0.95s ease-in-out, opacity 0.95s ease-in-out, top 0.95s ease-in-out, bottom 0.95s ease-in-out, left 0.95s ease-in-out, right 0.95s ease-in-out;
+}
+
+.megamenu {
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    position: sticky;
+    top: 0;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+}
+
+#navbar{
+    text-align: center;
+    width: 100%;
+}
+
+#navbar img{
+    width: 10%;
+}
+
+
+/*------------------------------------------------------------------
+    VIDEO
+-------------------------------------------------------------------*/
+
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:1;
+}
+
+h1{
+    font-family: 'Bird House Script' !important;
+    font-size: 60px;
+}
+
+.layer{
+    color: #fff;
+}
+
+.layer p{
+    padding: 15% 0;
+}
+
+.layer .button p{
+    padding: 10% 0;
+}
+
+.button{
+    border: solid;
+    border-color: #fff;
+    width: 70%;
+    display: inline-block;
+}
+
+#section0 .layer{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 30%;
+
+    /*
+    * Preventing flicker on some browsers
+    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+    */
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0{
+    overflow: hidden;
+}
+
+.section{
+    text-align:center;
+    overflow: hidden;
+}
+
+/*------------------------------------------------------------------
+    BACKGROUND VIDEO
+-------------------------------------------------------------------*/
+
+#home{
+    position: relative;
+    display: block;
+    max-height: 500px;
+}
+
+
+#set-height {
+    display: block;
+    margin: 5% 0;
+}
+
+#v0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
+
+@font-face {
+    font-family: "Bird House Script";
+    src: url("../assets/font/bird_house_script-webfont.woff2") format("woff2"),
+    url("../assets/font/bird_house_script-webfont.woff") format("woff");
+}
