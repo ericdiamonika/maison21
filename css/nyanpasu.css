@@ -152,6 +152,37 @@ img.arrow-scroll:hover{
     width: 50%;
 }
 
+#section2{
+    background-color: #EDEDED;
+    text-align: center;
+    height: 450px!important;
+}
+#section2 .fp-tableCell{
+    vertical-align: middle;
+    height: 450px!important;
+}
+#section2 .layer1{
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto!important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#section2 .layer1 .image-bloc img{
+    max-width: 100%;
+}
+#section2 .layer1 .image-bloc{
+    max-width: 400px;
+}
+#section2 .text{
+    text-align: left;
+    width: 100%;
+}
+
+#section3 .layer1{
+    margin: 30px 0;
+}
 /*------------------------------------------------------------------
     BACKGROUND VIDEO
 -------------------------------------------------------------------*/
@@ -209,6 +240,25 @@ a:link, a:visited{
     RESPONSIVE
 -------------------------------------------------------------------*/
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    .hidden-mob {
+        display: none;
+    }
+    #section2 .layer1{
+        grid-template-columns: 1fr;
+        grid-row-gap: 2.5em;
+    }
+    #section2 .text{
+        grid-row: 1;
+        text-align: center;
+    }
+    #section3 .text{
+        text-align: center;
+    }
+
+}
 
 @media screen and (max-width: 320px) {
     #section1 .fp-tableCell{
