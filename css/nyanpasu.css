@@ -37,7 +37,7 @@
 }
 
 #navbar img{
-    width: 10%;
+    width: 5%;
 }
 
 
@@ -63,7 +63,7 @@
 
 h1{
     font-family: 'Bird House Script' !important;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .layer{
@@ -71,7 +71,7 @@ h1{
 }
 
 .layer p{
-    padding: 15% 10%;
+    padding: 10% 38%;
     line-height: 1.3em; 
 
 }
@@ -83,7 +83,7 @@ h1{
 .button{
     border: solid;
     border-color: #fff;
-    width: 70%;
+    width: 30%;
     display: inline-block;
 }
 
@@ -139,17 +139,23 @@ img.arrow-scroll:hover{
 
 #section1 .layer1{
     color: #000;
-    display: flex;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto!important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 #section1 .fp-tableCell{
     vertical-align: middle !important;
 }
 
 .text{
-    width: 50%;
+    text-align: left;
+    padding: 0 5%;
 }
 .video{
-    width: 50%;
+    max-width: 600px;
 }
 
 #section2{
@@ -237,6 +243,43 @@ a:link, a:visited{
 }
 
 /*------------------------------------------------------------------
+    SECTION 3
+-------------------------------------------------------------------*/
+
+.block{
+    width: 100%;
+    padding: 0 15%;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto!important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+
+.bloc-text-right{
+    text-align: right;
+    width: 100%;
+    padding: 10% 5%;
+}
+
+.layer3 .img{
+    width: 100%;
+}
+
+.block .img img{
+    width: 40%;
+}
+
+.bloc-text-left{
+    text-align: left;
+    width: 100%;
+    padding: 10% 5%;
+}
+
+/*------------------------------------------------------------------
     RESPONSIVE
 -------------------------------------------------------------------*/
 
@@ -260,9 +303,37 @@ and (max-device-width : 568px) {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
+    .button{
+        width: 70%;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .layer p{
+        padding: 15% 10%;
+        line-height: 1.3em;
+
+    }
+    #navbar img{
+        width: 10%;
+    }
     #section1 .fp-tableCell{
         vertical-align: top !important;
+        display: block;
+    }
+
+    #section1 .layer1{
+        display: block;
+    }
+
+    .text{
+        text-align: center;
+        width: 100%;
+        margin: 10% 0 !important;
+    }
+    .video{
+        width: 100%;
     }
 
     .hidden-mob {
