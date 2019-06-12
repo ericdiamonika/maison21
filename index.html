@@ -33,11 +33,24 @@
         <a href="#section1"><img src="assets/img/arrow.svg" alt="" class="arrow-scroll"></a>
     </div>
     <div class="section" id="section1">
-        <p>PRESENTATION</p>
-        <h1>le concept</h1>
-        <video autoplay loop muted id="myVideo">
-            <source src="assets/video/fog.mp4" type="video/mp4">
-        </video>
+        <div class="layer1">
+            <div class="text">
+            <p>PRESENTATION</p>
+            <h1>le concept 21 G</h1>
+            <p class="hidden-mob">Le 5ème sens réside au coeur des émotions : la Maison 21 G souhaite en appeler à cellesci
+                et permettre l’émergence des désirs les plus enfouis. Elle partage l’expertise dans le
+                champ de la conception et création de parfums : depuis la signature des ingrédients
+                jusqu’aux combinatoires possibles, afin de révéler l’identité olfactive de chacun(e).
+
+                Ainsi, la Maison ambitionne de se positionner sur le secteur de la
+                Parfumerie Haut-de-gamme « sur mesure » et customisée</p>
+            </div>
+            <div class="video">
+            <video id="produit">
+                <source src="assets/video/comp.mp4" type="video/mp4">
+            </video>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -65,15 +78,15 @@
 <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
 <script type="text/javascript" src="js/fullpage.min.js"></script>
 <script>
-   /* AOS.init({
-        duration: 1200,
-    })*/
+    /* AOS.init({
+         duration: 1200,
+     })*/
 
-   new fullpage('#fullpage', {
-       //options here
-       autoScrolling:true,
-       scrollHorizontally: true
-   });
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true
+    });
 
 </script>
 </body>

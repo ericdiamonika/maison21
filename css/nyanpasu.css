@@ -137,6 +137,21 @@ img.arrow-scroll:hover{
     overflow: hidden;
 }
 
+#section1 .layer1{
+    color: #000;
+    display: flex;
+}
+#section1 .fp-tableCell{
+    vertical-align: middle !important;
+}
+
+.text{
+    width: 50%;
+}
+.video{
+    width: 50%;
+}
+
 /*------------------------------------------------------------------
     BACKGROUND VIDEO
 -------------------------------------------------------------------*/
@@ -164,6 +179,7 @@ img.arrow-scroll:hover{
     box-sizing: border-box;
     margin: 0 !important;
     font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 14px;
 
 }
 a:link, a:visited{
@@ -181,8 +197,25 @@ a:link, a:visited{
     font-size: 3em;
 }
 
+
+
 @font-face {
     font-family: "Bird House Script";
     src: url("../assets/font/bird_house_script-webfont.woff2") format("woff2"),
     url("../assets/font/bird_house_script-webfont.woff") format("woff");
+}
+
+/*------------------------------------------------------------------
+    RESPONSIVE
+-------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 320px) {
+    #section1 .fp-tableCell{
+        vertical-align: top !important;
+    }
+
+    .hidden-mob {
+        display: none;
+    }
 }
