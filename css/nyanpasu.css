@@ -234,6 +234,14 @@ a:link, a:visited{
     font-size: 3em;
 }
 
+h2{
+font-size: 2em;
+}
+
+h3{
+    font-family: 'Bird House Script' !important;
+    font-size: 6em;
+}
 
 
 @font-face {
@@ -248,7 +256,7 @@ a:link, a:visited{
 
 .block{
     width: 100%;
-    padding: 0 15%;
+    padding: 0 2%;
     max-width: 1000px;
     position: relative;
     margin: 0 auto!important;
@@ -278,6 +286,23 @@ a:link, a:visited{
     width: 100%;
     padding: 10% 5%;
 }
+
+.layer3{
+    position: relative;
+    top: 5%;
+}
+
+.layer3 .gras{
+    font-weight: bold;
+}
+
+
+#section4{
+    background-color: #EDEDED;
+    text-align: center;
+    height: 650px!important;
+}
+
 
 /*------------------------------------------------------------------
     RESPONSIVE
