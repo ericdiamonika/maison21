@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="./css/fullpage.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/nyanpasu.css">
-    <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
 <div id="fullpage">
@@ -20,14 +19,14 @@
                 <img src="assets/img/logo.png" alt="logo">
             </div>
         </nav>
-        <video data-autoplay loop muted id="myVideo">
+        <video data-autoplay loop muted playsinline id="myVideo">
             <source src="assets/video/background.mp4" type="video/mp4">
         </video>
         <div class="layer">
             <h1>Parfum 21G</h1>
             <p class="title">Créer votre parfum n'aura jamais été aussi simple !</p>
             <div class="button">
-                <p>Me tenir au courant</p>
+                <a data-scroll href="#section5"><p>Me tenir au courant</p></a>
             </div>
         </div>
         <a href="#section1"><img src="assets/img/arrow.svg" alt="" class="arrow-scroll"></a>
@@ -39,13 +38,11 @@
                 <h3>le concept</h3>
                 <p class="hidden-mob">La Maison 21 G souhaite  l’émergence des désirs les plus enfouis. Elle partage l’expertise dans le
                     champ de la conception et création de parfums.
-
+                    <br> <br>
                     A travers une signature créer grâce à un questionnaire de personnalité, vous avez également un profil olfactif pour avoir votre parfum.</p>
             </div>
-            <div class="video">
-                <video id="video" data-autoplay loop muted>
-                    <source src="assets/video/comp.mp4" type="video/mp4">
-                </video>
+            <div class="image">
+                <img src="assets/img/perfume.png" alt="parfum">
             </div>
         </div>
     </div>
@@ -68,7 +65,7 @@
             <div class="title">
                 <h2>COMMENT ÇA MARCHE ?</h2>
                 <h3>Instructions</h3>
-                <div class="block">
+                <div class="block left">
                     <div class="img">
                         <img src="assets/gif/computer.gif" alt="">
                     </div>
@@ -78,18 +75,18 @@
                             olfactif.</p>
                     </div>
                 </div>
-                <div class="block">
+                <div class="block right">
                     <div class="bloc-text-left">
                         <p class="gras">Passez commande et recevez votre pack</p>
                         <p>Recevez vos deux capsules de senteur avec la bouteille de parfum.</p>
                     </div>
                     <div class="img">
-                        <img src="assets/gif/comp_2.gif" alt="">
+                        <img class="g" src="assets/gif/comp_2_1.gif" alt="">
                     </div>
                 </div>
-                <div class="block">
+                <div class="block left">
                     <div class="img">
-                        <img src="assets/gif/comp_2_1.gif" alt="">
+                        <img class="g" src="assets/gif/comp_2.gif" alt="">
                     </div>
                     <div class="bloc-text-right">
                         <p class="gras">Assemblez les doses et c’est prêt !</p>
@@ -97,7 +94,7 @@
                             parfum.</p>
                     </div>
                 </div>
-                <div class="block">
+                <div class="block right">
                     <div class="bloc-text-left">
                         <p class="gras">Renvoyez vos capsules</p>
                         <p>Une fois la bouteille terminée, vous pouvez nous renvoyer vos capsules.</p>
