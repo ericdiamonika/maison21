@@ -63,17 +63,18 @@
 
 h1{
     font-family: 'Bird House Script' !important;
-    font-size: 80px;
+    font-size: 15em;
 }
 
 .layer{
     color: #fff;
 }
 
-.layer p{
-    padding: 10% 38%;
-    line-height: 1.3em; 
 
+#section0 .title{
+    padding: 5% 38%;
+    line-height: 1.3em;
+    font-size: 1.6em;
 }
 
 .layer .button p{
@@ -116,7 +117,7 @@ img.arrow-scroll:hover{
     z-index: 4;
     width: 100%;
     left: 0;
-    top: 30%;
+    top: 20%;
 
     /*
     * Preventing flicker on some browsers
@@ -148,6 +149,11 @@ img.arrow-scroll:hover{
 }
 #section1 .fp-tableCell{
     vertical-align: middle !important;
+    height: 650px !important;
+}
+
+#section1{
+    height: 650px !important;
 }
 
 .text{
@@ -294,15 +300,96 @@ h3{
 
 .layer3 .gras{
     font-weight: bold;
+    margin-bottom: 15px !important;
 }
 
+
+/*------------------------------------------------------------------
+    SECTION 4
+-------------------------------------------------------------------*/
 
 #section4{
     background-color: #EDEDED;
     text-align: center;
-    height: 650px!important;
+    height: 450px!important;
 }
 
+#section4 .fp-tableCell{
+    height: 450px !important;
+}
+
+#section4 .title{
+    position: relative;
+    top: 5%;
+}
+
+#section4 .gras{
+    font-weight: bold;
+    margin: 15px 0 !important;
+}
+
+#section4 p{
+    padding: 0 15%;
+}
+
+#section4 .bloc-text-left{
+text-align: center;
+}
+
+#section4 .bloc-text-right{
+    text-align: center;
+}
+
+#section4 .block img{
+    width: 20%;
+}
+
+#section4 .text{
+    text-align: center;
+}
+
+/*------------------------------------------------------------------
+    SECTION 5
+-------------------------------------------------------------------*/
+
+#section5 {
+    height: 370px !important;
+}
+
+#section5 .fp-tableCell {
+    height: 370px !important;
+}
+
+.layer5 .bloc{
+    width: 100%;
+    padding: 5% 2%;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto!important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.social img{
+    width: 60px;
+}
+
+.layer5 .text{
+color: #fff;
+    text-align: center;
+}
+
+.footer{
+    background-color: black;
+    vertical-align: bottom;
+}
 
 /*------------------------------------------------------------------
     RESPONSIVE
@@ -326,6 +413,16 @@ and (max-device-width : 568px) {
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    h1{
+        font-size: 10em;
+    }
+    #section0 .title{
+        padding: 5% 25%;
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 425px) {
